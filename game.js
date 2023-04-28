@@ -19,8 +19,8 @@ function update() {
     //Auto clicker
     points += autoClickerLevel / 1000;
 
-    if(autoClickerLevel >= 150){
-        autoClickerLevel = 150;
+    if(autoClickerLevel >= 300){
+        autoClickerLevel = 300;
     }
 }
 function draw() {
@@ -40,7 +40,7 @@ function draw() {
 
     context.font = "50px Arial"
     context.fillStyle = "Black"
-    context.fillText("Ducks per second: " + Math.round(autoClickerLevel) / 10 + " / 15", 100, 80, 250, 250);
+    context.fillText("Ducks per second: " + Math.round(autoClickerLevel) / 10 + " / 30", 100, 80, 250, 250);
 
     //Save and Load text
     context.font = "50px Arial"
